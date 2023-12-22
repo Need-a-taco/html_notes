@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Lists in HTML</title>
+</head>
+<body>
+    <h2>Here are some lists in HTML</h2>
+    <h4>Unordered List</h4>
+    <ul>
+        <li>apples</li>
+            <ul>
+                <li>for apple pie</li>
+                <li>for apple juice</li>
+                <li>for fruit salad</li>
+                    <ul>
+                        <li>tropical fruit salad</li>
+                        <li>garden fruit salad</li>
+                    </ul>
+            </ul>
+        <li>bananas</li>
+        <li>milk</li>
+    </ul>
+    <h4>Ordered List</h4>
+    <ol type="1">
+        <li>wake up</li>
+            <ol type="a">
+                <li>snooze alarm once</li>
+                <li>snooze alarm twice</li>
+            </ol>
+        <li>go to the bathroom</li>
+        <li>check email</li>
+        <li>get out of bed</li>
+    </ol>
+    <h4>Description List</h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>This adds structure to a webpage.</dd>
+        <dt>CSS</dt>
+        <dd>This adds style to a webpage</dd>
+        <dt>Javascript</dt>
+        <dd>This adds functionality to a webpage.</dd>
+    </dl>
+</body>
+</html>
+
+<!--
+Lots of new information here. Unordered lists are simply bullet
+points. We can embed unordered lists within others to have
+subpoints, as seen above. This is done with the outside surrounding
+tags of <ul></ul>, with many <li></li> pairs. 
+
+The same is true for ordered lists, but we can specify how we want
+to order it with the "type" parameter. This can take arguments 1, a,
+A, i, I, for different ways to order them. All this we can embed as
+well. Also note that we have the <ol></ol> tags surrounding it all.
+
+Finally, there are Description Lists. This is done with the
+surrounding tags <dl></dl>. Inside, we have two types of terms.
+<dt></dt> is for description term, and <dd></dd> is for description
+definition. 
+-->

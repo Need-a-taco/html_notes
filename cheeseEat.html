@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage to Play Audio</title>
+</head>
+<body>
+    <h1>You got cheese that I can eat?</h1>
+    <audio controls muted autoplay loop>
+        <source src="/audios/cheese.mp3">
+        <source src="/audios/cheese.wav">
+        Not supported
+    </audio>
+</body>
+</html>
+
+<!-- 
+    Audios can just be an opening tag. For example, if we want, we
+    could just have it as <audio controls src="/audios/cheese.mp3">.
+    However, the form we have above is good practice, as we put
+    multiple possible formats like mp3 or wav to prepare for the
+    case that one of them is not supported. If none of them are
+    supported, we can just put the message "Not supported"
+    
+    Note that it doesn't show up on our webpage unless we type in 
+    "controls". So far, this is very similar to putting images 
+    into our webpage.
+
+
+
+    Note that audios tag takes boolean attributes. This means that
+    inside the tag, we simply type the word to set it to true, which
+    in effect makes it show up on our page. E.g. "controls" makes
+    the bar show up. 
+    "muted" automatically mutes the audio when we first come onto
+    the page. "autoplay" does exactly that, as does "loop".  
+-->

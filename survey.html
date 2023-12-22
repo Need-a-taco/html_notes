@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take a Fun Survey</title>
+</head>
+<body>
+    
+    <form action="action_page.php" method="GET">
+        <div>
+            <label for="fname">first name:</label>
+            <input type="text" id="fname" name="fname" placeholder="John" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lname">last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Doe" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="pass">password:</label>
+            <input type="password" id="pass" name="pass" maxlength="15">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="johndoe@gmail.com">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">phone #:</label>
+            <input type="tel" id="phone" name="phone" placeholder="1234-5678">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="bday">birthdate:</label>
+            <input type="date" id="bdate" name="bdate">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="quantity">quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="99">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="title">title:</label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" name="title" id="Mr." value="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" name="title" id="Mrs." value="Mrs.">
+
+            <label for="Mx.">Mx.</label>
+            <input type="radio" name="title" id="Mx." value="Mx.">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="payment">payment:</label>
+            <select id="payment" name="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="subscribe">subscribe:</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+        </div>
+
+    </form>
+
+</body>
+</html>
+
+<!--
+The final part of this tutorial is learning how to make forms in HTML. This is
+more just an imcomplete introduction, because in order to make a form actually
+useful, we need somewhere to store the data of the form. In this case, we do
+not actually create that storage. Rather, we are more interested in making the
+HTML elements on a webpage that can get that data from users. It looks cool and
+professional. 
+
+We will need <form></form> tags in the body surrounding the entire form. Now,
+most of the content consists of label and input tags. The most basic is a
+text field. The label is fairly easy, it is just <label>field:</label> with
+an attribute called for. 
+
+The for attribute just determines where our mouse or keyboard is shifted to
+or focused on after we click on the label. Whatever we type in the for
+attribute, it will search for an input tag with that same id attribute, and 
+then it will focus on that. 
+
+In this example, clicking on the first name label will automatically bring
+our cursor to the first name field so we can start typing our first name.
+
+The id attribute provides a unique identifier for a form control, useful for
+styling, scripting, and server-side processing. This is useful for example
+when we create javascript code to implement functionality for our webpage.
+All of the id attributes will allow us to refer to specific parts of the
+form. 
+
+The name attribute is for server-side processing. It is useful for when we
+have users actually submitting things. Then, the name attributes will be
+the titles under which data is stored. 
+
+Other than that, changing the type attribute of our input tag will modify
+the input bars that the user interacts with on the webpage. For example,
+changing type to password makes it so the text typed in is hidden. We can
+also add a maxlength field to limit the length of text inputed in. 
+
+Other than that, we have provided a bunch of different input types above.
+It is all pretty intuitive, so just see the code above for yourself for
+review. However, one thing to note is that radio buttons within the same
+document can have multiple selected at the same time. 
+
+However, we might want to make it so that only one radio button can be
+selected at the same time. This is by adding a name attribute. Only one
+under the same name can be selected at the same time. 
+
+Additionally, it is best practice to use div tags to surround each part
+when we make the form webpage. 
+-->

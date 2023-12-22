@@ -1,0 +1,55 @@
+<!-- Now we will be introduced to attributes and hyperlinks.
+We all know hyperlinks, like the one for Google.com
+
+The goal of this webpage is to get us to Google via a link. 
+
+https://www.google.com/
+
+This we know. HTML can take these as inputs in our code. More
+specifically, we will use attributes. Monkey Brain: Attributes
+are additional parameters specified in the opening tags.
+
+<tagname attribute1="value1" attribute2="value2">Content</tagname>
+
+In this case, we will use the anchor tag, or <a></a>. This tag
+is useful for tagging on hyperlinks. But it can also be used for
+document downloads, emails, and phone numbers. The point is, the
+anchor tag is useful for attaching or inserting things. 
+
+In this case, the attribute will be the actual link to the content,
+so this is where we will put the hyperlink to Google. More
+specifically, we will input the hyperlink as a string parameter for 
+the href attribute, which specifically takes hyperlinks in the
+anchor tag.
+
+Additionally, one piece of functionality we also have
+control over is whether google opens up in the same tab or a new
+tab. This is done with the target attribute. If we want to open it
+in the same tab, we do target=_self, and if we want to open it in
+a new tab, we do target=_blank
+
+Note that be default, if no target attribute is specified explicitly,
+we have target=_self
+
+Finally, we can add a title attribute. This is a little textbox
+that appears when we hover over the content of our anchor tag. 
+
+However,
+what the user clicks on in order to get there can is determined 
+by what is in between the anchor tags. The code is shown below.
+Josh is about to code this up, cool guy emoji. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link to Google</title>
+</head>
+<body>
+    <h1>Click the link below to get to search engine Google.com!</h1>
+    <hr>
+    <a href="https://www.google.com/" target =_blank title="click it already bruh">Click me!</a>
+</body>
+</html>

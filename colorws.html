@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Website</title>
+</head>
+<body style="background-color: black;">
+    <h1 style="color: red">Hello!</h1>
+    <h1 style="color: rgb(5, 240, 232)">Hello!</h1>
+    <h1 style="color: #28f005">Hello!</h1>
+
+    <p style="background-color: #222222; color: #28f005">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum 
+        fuga minima neque! Officiis, exercitationem fugit! Eum, ullam 
+        ipsam nulla eius vero, aliquam temporibus unde id quibusdam cum 
+        quis aut eaque!
+    </p>
+</body>
+</html>
+
+<!-- 
+Here, we've made a super simple website, however we've focused on decorating
+it with some inline CSS. HTML has the ability to put these CSS parameters in
+as part of the tags. This is good if we do not want to go through the process
+of creating a whole new CSS file, especially if it's just a little bit of
+decoration. 
+
+There are two types of parameters that we use in this website. There is
+background-color. This parameter changes the entire background of whatever
+tag we are currently working with. For example, when we used it up top in
+the body tag, it changed the background color of the entire webpage. However,
+when we used it with just the paragraph tag, it changed the color of just
+that paragraph. 
+
+Secondly, there is the color attribute. This one just changes the text color.
+We have shown 3 ways that we can entire in arguments for this attribute.
+Firstly, there is just saying the color. CSS recognizes a lot of color names,
+so changes are just enterig a basic color like "blue" will do the trick. 
+
+However, we might want more precision. In this case, we can entire in the
+exact RGB value. We can do this with the function rbg(x, y, z), where x, y,
+and z denote the red, blue, and green values respectively. We can also denote
+this color in hexadecimal. If we want to do this, we have to first put a
+hashtag before all of the numbers and letters. 
+
+Finally, note that all of this is formatted in a string into the "style"
+attribute within our HTML tag. If we are using multiple CSS attributes,
+make sure to separate them with a semicolon, as seen above for the paragraph
+tag. 
+-->

@@ -1,0 +1,60 @@
+<!-- We can also display images in our webpage. In this implementation, 
+I downloaded the image to my computer. In this case, we downloaded some
+images to our images folder, which is typical good practice in larger
+projects just so we have a place to store all of our photos.
+
+We display images with the <img> tag. Notice that this only has the
+opening tag, and there is not closing tab. 
+
+However, note that we have to access the folder according to our file
+structure. Thus, if we have an image file called pic.png inside a
+images folder, which is in the same directory as the index.html file.
+Thus, we refer to it as \images\pic.png. Cool we got it working.
+Note that all this would happen as the parameter or the source 
+attribute, which is called src. 
+
+Now if we want to scale our picture, we would modify the height and
+width attributes. However, modifying both of these may distort the
+proportional dimensions of the picture. So if we just want to rescale
+the picture in its original proportions, we should adjust one of the
+height or width attributes. 
+
+Then, it is also good practice to add alternate text to our image,
+which normally we don't see. However, this becomes useful for text-
+readers to read if there is blind functionality enabled on the page.
+This is done by inputing a string into the alt attribute. Just like
+before, we can add a title attribute, which again is a textbox that
+appears after we hover over the image for like 2 seconds. 
+
+We can add one more piece of functionality to our image. We can make
+it so that clicking on the image takes you to a different page,
+basically embedding a hyperlink or different page within the 
+attributes. Note that in order to do this, we put our <img></img>
+tags nested inside anchor tags <a></a>, and then we input the
+hyperlink into the href attribute in the opening anchor tag, just
+like we did for embedding links in text. The only difference is
+that now we embed it in an image. 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doggos</title>
+</head>
+<body>
+    <h1>Let's display some doggo pics!</h1>
+    <hr>
+    <p>Click on this to learn more!</p>
+    <a href="https://en.wikipedia.org/wiki/Rat">
+        <img src="/images/blungi.jpg" height=300, 
+        alt="Two dogs lying in the sun" title="they vibin'">
+    </a>
+    <p>Clicking on this won't do anything. </p>
+    <img src="/images/blungus.jpg" height="300">
+
+
+</body>
+</html>

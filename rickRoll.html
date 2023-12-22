@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Button</title>
+</head>
+<body>
+    
+    <a href="https://www.youtube.com/watch?v=Teh1XvkXMBk&ab_channel=PeterParkerCries">
+        <button style="background-color: #333333; color: #00FF00; 
+        border-radius: 5px;">click me</button>
+    </a>
+
+    <br> <br>
+
+    <button disabled>can't click</button>
+
+    <br> <br>
+
+    <p id="test" style="color: red">Hello</p>
+
+    <button onclick="switchText()" style="background-color: #333333; color: #00FF00;
+    border-radius: 5px;">magic button</button>
+
+    <br> <br>
+
+    <button onclick="swapColors()">super button</button>
+
+    <script>
+        function switchText() {
+            currText = document.getElementById("test").innerHTML
+            if (currText === "Hello") {
+                document.getElementById("test").innerHTML = "Goodbye"
+            } else {
+                document.getElementById("test").innerHTML = "Hello"
+            }
+        }
+
+        function swapColors() {
+            var currColor = document.getElementById("test").style.color;
+            if (currColor === "red") {
+                document.getElementById("test").style.color = "blue";
+            } else {
+                document.getElementById("test").style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!--
+This is a very dense file that tells us a lot about the interplay of HTML, CSS, and
+Javascript. First of all, there is just a button, which itself is pretty cool. There
+is a lot of inline CSS that we can use to change the appearance of the button.
+
+Then, there are things that can happen when we click the button. We can use anchor
+tags to send us to a link, just like we did with images. That's what we've done with
+the first button at the top. We've wrapped it in anchor tags and then attached the
+link to our desired source. 
+
+The second button just shows us how we can disable the button with the boolean
+attribute by typing disabled.
+
+Then, the third button shows how we can have Javascript code inside an HTML file.
+We want our button to do something more complex, something that we can control
+precisely with a Javascript function. This can be done with the onclick attribute
+for a button. 
+
+This attribute tells the webpage what to do in the event of a button click. In
+here, we put the name of a Javascript function. Then, inside the script tags, we
+implement actual Javascript code and create the function that we named earlier in
+our HTML tag. 
+
+Note that the text that we want to change is the paragaph text that says "Hello"
+at first. We have to differentiate this text from the other code so that our function
+can modidy this text specifically, as opposed to any other text. The way we do this
+is with the class attribute. Here, we can call it whatever, as long as we are also
+consistent with it in the Javascript function. 
+
+Host the server locally to see what the Javascript can make the button do! Once
+again, Javascript is for functionality in the webpage, as we can see. It is simply
+a programming language. I'm finally starting to understand this all.
+
+Note here that we have something that says document.somestuff. This is the
+Javascript HTML DOM Document Object.
+
+Now this is useful because we have JS and HTML code in the same document. Unlike 
+the stuff before I've done with Python, we now want to retrieve data from the
+web page. In this case, we want to make the HTML text a variable. 
+
+This is where the JS HTML DOM Doc Obj stuff comes in. See the documentation for
+specifics, but here are a few basics. 
+
+document.getElementById(id) : finds an element by its element id.
+
+document.getElementByTagName(name) : find elements by tag name
+
+document.getElementByClassName(name) : find elements by its class attribute
+
+Then we also have stuff to actually change HTML elements.
+
+element.innerHTML = new html content : changes the inner HTML of an elt
+
+element.attribute = new value : changes the attribute value of an HTML elt
+
+element.property = new style = change the style of an elt
+
+There's lots more... I'm having a lot of fun. 
+-->
